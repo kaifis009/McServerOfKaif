@@ -7,8 +7,13 @@ cd $MAIN_DIR
 sudo apt install python3-pip
 sudo pip3 install bpytop
 sudo apt install -y -qq screen neofetch
+sudo apt install -y -qq jq curl
 cd $MAIN_DIR
 mkdir -p server
 cd server
 sudo wget "https://git.magmafoundation.org/api/v4/projects/103/packages/maven/org/magmafoundation/Magma/1.19.3-44.1.23-ef6188f2/Magma-1.19.3-44.1.23-ef6188f2-server.jar" -o srv.jar
-
+cd ..
+curl -SsL https://playit-cloud.github.io/ppa/key.gpg | sudo apt-key add -
+sudo curl -SsL -o /etc/apt/sources.list.d/playit-cloud.list https://playit-cloud.github.io/ppa/playit-cloud.list
+sudo apt update
+sudo apt install playit

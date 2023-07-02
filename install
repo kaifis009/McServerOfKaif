@@ -10,7 +10,7 @@ sudo apt install -y -qq screen neofetch
 sudo apt install -y -qq jq curl
 cd $MAIN_DIR
 mkdir -p server
-cd server
+cd srv
 sudo wget "https://git.magmafoundation.org/api/v4/projects/103/packages/maven/org/magmafoundation/Magma/1.19.3-44.1.23-ef6188f2/Magma-1.19.3-44.1.23-ef6188f2-server.jar" -o srv.jar
 cd ..
 curl -SsL https://playit-cloud.github.io/ppa/key.gpg | sudo apt-key add -

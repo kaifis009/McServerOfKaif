@@ -1,11 +1,14 @@
 mkdir bin
 chmod +x *
 export MAIN_DIR=$PWD
-wget -q https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz -0 bin/java.tar.xz
+sudo wget -q https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz -0 bin/java.tar.xz
 tar -xf java.tar.xz && mv "jdk-17.0.1" java_bins
 cd $MAIN_DIR
+sudo apt install python3-pip
+sudo pip3 install bpytop
+sudo apt install -y -qq screen neofetch
+cd $MAIN_DIR
+mkdir -p server
+cd server
+sudo wget "https://git.magmafoundation.org/api/v4/projects/103/packages/maven/org/magmafoundation/Magma/1.19.3-44.1.23-ef6188f2/Magma-1.19.3-44.1.23-ef6188f2-server.jar" -o srv.jar
 
-
-
-apt install python3-pip
-pip3 install bpytop

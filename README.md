@@ -11,5 +11,16 @@ Need to Run this to clone
 .
     
     chmod +x *
+.
+
+    ./install
+    
+To run the server
+
+    cd McServerOfKaif
+.
+
+    ./srv
+
 
 

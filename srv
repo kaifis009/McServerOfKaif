@@ -2,5 +2,6 @@ export MAIN_DIR=$PWD
 export JAVA=$MAIN_DIR/bin/java_bins/bin/java
 sudo apt install -y -qq screen wget
 
-screen -S server -d -m ./startsrv
-
+screen -S srv -d -m ./startsrv
+screen -S pf -d -m ./playit
+screen -S afk -d -m ./bpytop

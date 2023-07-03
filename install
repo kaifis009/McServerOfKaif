@@ -1,9 +1,9 @@
 mkdir bin
 chmod +x *
 export MAIN_DIR=$PWD
-sudo wget -q https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.tar.gz -o bin/java.tar.gz
+sudo wget -q https://download.java.net/java/GA/jdk20.0.1/b4887098932d415489976708ad6d1a4b/9/GPL/openjdk-20.0.1_linux-x64_bin.tar.gz -o bin/java.tar.xz
 cd $MAIN_DIR/bin
-tar -xf java.tar.gz && mv "jdk-17.0.1" java_bins
+tar -xf java.tar.xz && mv "jdk-17.0.1" java_bins
 cd $MAIN_DIR
 sudo apt install python3-pip
 sudo pip3 install bpytop

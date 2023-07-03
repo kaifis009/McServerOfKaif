@@ -3,4 +3,4 @@ mem=$(grep MemTotal /proc/meminfo | sed -e 's/MemTotal:[ ]*//' | sed -e 's/ kB//
 mem=$(($mem/1024/1024))
 
 
-$JAVA -Xmx${mem}G -Xms${mem}G -jar srv.jar nogui
+$JAVA -Xms${mem}G -Xms${mem}G -jar srv.jar nogui

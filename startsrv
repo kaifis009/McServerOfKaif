@@ -1,4 +1,4 @@
-cd srv
+cd server
 mem=$(grep MemTotal /proc/meminfo | sed -e 's/MemTotal:[ ]*//' | sed -e 's/ kB//') # some new stuff 
 mem=$(($mem/1024/1024))
 

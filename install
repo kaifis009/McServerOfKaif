@@ -1,7 +1,7 @@
 mkdir bin
 chmod +x *
 export MAIN_DIR=$PWD
-sudo wget -q https://download.oracle.com/java/20/archive/jdk-20.0.1_linux-x64_bin.tar.gz -o bin/java.tar.gz
+sudo wget -q https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.tar.gz -o bin/java.tar.gz
 cd $MAIN_DIR/bin
 tar -xf java.tar.gz && mv "jdk-17.0.1" java_bins
 cd $MAIN_DIR

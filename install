@@ -1,7 +1,7 @@
 mkdir bin
 chmod +x *
 export MAIN_DIR=$PWD
-wget -q https://objects.githubusercontent.com/github-production-release-asset-2e65be/661305887/d6888e1a-e92a-41f8-af4f-2fc4343ae726?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230703%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230703T061653Z&X-Amz-Expires=300&X-Amz-Signature=6ec9a0257b802a05d8ef28507babb987bb1675f67e661bcc721f86e2bf2698bd&X-Amz-SignedHeaders=host&actor_id=91021142&key_id=0&repo_id=661305887&response-content-disposition=attachment%3B%20filename%3Dopenjdk-20.0.1_linux-x64_bin.tar&response-content-type=application%2Foctet-stream -o bin/java.tar.xz
+wget -q "https://objects.githubusercontent.com/github-production-release-asset-2e65be/661305887/d6888e1a-e92a-41f8-af4f-2fc4343ae726?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230703%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230703T061653Z&X-Amz-Expires=300&X-Amz-Signature=6ec9a0257b802a05d8ef28507babb987bb1675f67e661bcc721f86e2bf2698bd&X-Amz-SignedHeaders=host&actor_id=91021142&key_id=0&repo_id=661305887&response-content-disposition=attachment%3B%20filename%3Dopenjdk-20.0.1_linux-x64_bin.tar&response-content-type=application%2Foctet-stream" -o bin/java.tar.xz
 cd $MAIN_DIR/bin
 tar -xf java.tar.xz && mv "jdk-17.0.1" java_bins
 cd $MAIN_DIR

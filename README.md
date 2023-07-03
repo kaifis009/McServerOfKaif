@@ -17,7 +17,7 @@ Need to Run this to clone
     
 To run the server
 
-    cd McServerOfKaif
+    cd mc
 .
 
     ./srv

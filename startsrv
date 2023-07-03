@@ -1,0 +1,6 @@
+cd srv
+mem=$(grep MemTotal /proc/meminfo | sed -e 's/MemTotal:[ ]*//' | sed -e 's/ kB//') # some new stuff 
+mem=$(($mem/1024/1024))
+
+
+$JAVA -Xmx${mem}G -Xms${mem}G -jar server.jar nogui

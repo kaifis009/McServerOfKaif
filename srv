@@ -1,10 +1,6 @@
 export MAIN_DIR=$PWD
 export JAVA=$MAIN_DIR/bin/java_bins/bin/java
-cd srv
+sudo apt install -y -qq screen wget
 
-mem=$(grep MemTotal /proc/meminfo | sed -e 's/MemTotal:[ ]*//' | sed -e 's/ kB//') # some new stuff 
+screen -S server -d -m ./startsrv
 
-mem=$(($mem/1024/1024))
-
-
-$JAVA -Xmx${mem}G -Xms${mem}G -jar srv.jar nogui
